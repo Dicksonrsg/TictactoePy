@@ -102,4 +102,6 @@ def game():
     elif restart == 'n' or restart == 'N':
         print("Thanks for playing.")
         SystemExit
-                                           
+
+if __name__ == "_main_":
+    game()
