@@ -86,4 +86,20 @@ def game():
             print("\nGame over.\n")
             print("It's a tie!!")    
         
-        #Changing players                                   
+        #Changing players
+        if turn == 'X':
+            turn = 'O'
+        else:
+            turn = 'X'
+        
+    #Asking players whether they play again
+    restart = input("Would you like to play again? (y/n")
+    if restart == 'y' or restart == 'Y':
+        for key in board_keys:
+            theBoard[key] = ' '
+        
+        game()
+    elif restart == 'n' or restart == 'N':
+        print("Thanks for playing.")
+        SystemExit
+                                           
