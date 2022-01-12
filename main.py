@@ -41,42 +41,42 @@ def game():
         #Check if a player has won after 5 turns
         if count >= 5:
             if theBoard['7'] == theBoard['8'] == theBoard['9'] !=' ': #Top across
-                print(theBoard)
+                showBoard(theBoard)
                 print("\nGame Over.\n")
                 print("*** " + turn + " won. ***")
                 break
             elif theBoard['4'] == theBoard['5'] == theBoard['6'] !=' ': #Middle across
-                print(theBoard)
+                showBoard(theBoard)
                 print("\nGame Over.\n")
                 print("*** " + turn + " won. ***")
                 break
             elif theBoard['1'] == theBoard['2'] == theBoard['3'] !=' ': #Bottom across
-                print(theBoard)
+                showBoard(theBoard)
                 print("\nGame Over.\n")
                 print("*** " + turn + " won. ***")
                 break
             elif theBoard['1'] == theBoard['4'] == theBoard['7'] !=' ': #Left down
-                print(theBoard)
+                showBoard(theBoard)
                 print("\nGame Over.\n")
                 print("*** " + turn + " won. ***")
                 break 
             elif theBoard['2'] == theBoard['5'] == theBoard['8'] !=' ': #Middle down
-                print(theBoard)
+                showBoard(theBoard)
                 print("\nGame Over.\n")
                 print("*** " + turn + " won. ***")
                 break   
             elif theBoard['3'] == theBoard['6'] == theBoard['9'] !=' ': #Right down
-                print(theBoard)
+                showBoard(theBoard)
                 print("\nGame Over.\n")
                 print("*** " + turn + " won. ***")
                 break
             elif theBoard['7'] == theBoard['5'] == theBoard['3'] !=' ': #Diagonal 1
-                print(theBoard)
+                showBoard(theBoard)
                 print("\nGame Over.\n")
                 print("*** " + turn + " won. ***")
                 break
             elif theBoard['1'] == theBoard['5'] == theBoard['9'] !=' ': #Diagonal 2
-                print(theBoard)
+                showBoard(theBoard)
                 print("\nGame Over.\n")
                 print("*** " + turn + " won. ***")
                 break 
@@ -93,7 +93,7 @@ def game():
             turn = 'X'
         
     #Asking players whether they play again
-    restart = input("Would you like to play again? (y/n")
+    restart = input("Would you like to play again? (y/n)")
     if restart == 'y' or restart == 'Y':
         for key in board_keys:
             theBoard[key] = ' '
@@ -103,5 +103,5 @@ def game():
         print("Thanks for playing.")
         SystemExit
 
-if __name__ == "_main_":
-    game()
+#if __name__ == "_main_":
+game()
