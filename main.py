@@ -85,6 +85,7 @@ def game():
         if count == 9:
             print("\nGame over.\n")
             print("It's a tie!!")    
+            break
         
         #Changing players
         if turn == 'X':
@@ -103,5 +104,5 @@ def game():
         print("Thanks for playing.")
         SystemExit
 
-#if __name__ == "_main_":
-game()
+if __name__ == "_main_":
+    game()
