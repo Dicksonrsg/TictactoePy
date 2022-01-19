@@ -104,5 +104,5 @@ def game():
         print("Thanks for playing.")
         SystemExit
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     game()
